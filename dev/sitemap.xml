@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/SUMMARY/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://emilstenstrom.github.io/django-components/latest/license/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
@@ -31,97 +36,97 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/__init__.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/app_settings.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/app_settings/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/apps.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/apps/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/component.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/component/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/component_registry.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/component_registry/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/logger.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/logger/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/__init__.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/__init__.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/startcomponent.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/startcomponent/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/upgradecomponent.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/management/commands/upgradecomponent/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/middleware.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/middleware/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/safer_staticfiles/__init__.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/safer_staticfiles/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/safer_staticfiles/apps.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/safer_staticfiles/apps/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/slots.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/slots/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/template_loader.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/template_loader/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/templatetags/__init__.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/templatetags/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/templatetags/component_tags.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/templatetags/component_tags/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/types.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/types/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/utils.md/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/reference/django_components/utils/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -131,37 +136,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/commands/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/getting_started/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/installation/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/logging_debugging/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/requirements_compatibility/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/security/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/settings/</loc>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/SUMMARY/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -181,11 +156,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/creating_using_components/middleware/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/creating_using_components/single_file_component/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
@@ -197,6 +167,41 @@
     </url>
     <url>
          <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/creating_using_components/using_slots/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/installation/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/installation/requirements_compatibility/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/integration/commands/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/integration/logging_debugging/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/integration/middleware/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/integration/security/</loc>
+         <lastmod>2024-04-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilstenstrom.github.io/django-components/latest/user_guide/integration/settings/</loc>
          <lastmod>2024-04-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
