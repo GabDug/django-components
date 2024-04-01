@@ -2,9 +2,29 @@
 <a href="https://github.com/EmilStenstrom/django-components/actions?query=workflow%3A%22Run+tests%22"><img align="right" src="https://github.com/EmilStenstrom/django-components/workflows/Run%20tests/badge.svg" alt="Show test status"></a>
 <a href="https://pepy.tech/project/django-components"><img align="right" src="https://pepy.tech/badge/django-components" alt="Show download stats"></a>
 
-A way to create simple reusable template components in Django.
+[![PyPI - Version](https://img.shields.io/pypi/v/django-components)](https://pypi.org/project/django-components/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-components)](https://pypi.org/project/django-components/) [![PyPI - License](https://img.shields.io/pypi/l/django-components)](https://EmilStenstrom.github.io/django-components/latest/license/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/django-components)](https://pypistats.org/packages/django-components) [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/EmilStenstrom/django-components/tests.yml)](https://github.com/EmilStenstrom/django-components/actions/workflows/tests.yml)
 
-It lets you create "template components", that contains both the template, the Javascript and the CSS needed to generate the front end code you need for a modern app. Components look like this:
+[**Docs**](https://EmilStenstrom.github.io/django-components/latest/)
+
+
+Create simple reusable template components in Django
+
+
+## Features
+
+<!-- FIXME Links -->
+
+- ✨ **Reusable components**: Create components that can be reused in different parts of your project, or even in different projects.
+- 📁 **Single file components**: Keep your Python, CSS, Javascript and HTML in one place (if you wish)
+- 🎰 **Slots**: Define slots in your components to make them more flexible.
+- 💻 **CLI**: A command line interface to help you create new components.
+- 🚀 **Wide compatibility**: Works with [modern and LTS versions of Django](/user_guide/compatibility).
+- **Load assets**: Automatically load the right CSS and Javascript files for your components, with [our middleware](/user_guide/middleware).
+
+
+## Summary
+
+It lets you create "template components", that contains both the template, the Javascript and the CSS needed to generate the front end code you need for a modern app. Use components like this:
 
 ```htmldjango
 {% component "calendar" date="2015-06-19" %}{% endcomponent %}
@@ -44,7 +64,6 @@ And this is what gets rendered (plus the CSS and Javascript you've specified):
 - [Running django-components project locally](#running-django-components-project-locally)
 - [Development guides](#development-guides)
 
-## Release notes
 
 🚨📢 **Version 0.85** Autodiscovery module resolution changed. Following undocumented behavior was removed:
 - Previously, autodiscovery also imported any `[app]/components.py` files, and used `SETTINGS_MODULE` to search for component dirs.
@@ -82,49 +101,36 @@ And this is what gets rendered (plus the CSS and Javascript you've specified):
 
 🚨📢 **Version 0.5** CHANGES THE SYNTAX for components. `component_block` is now `component`, and `component` blocks need an ending `endcomponent` tag. The new `python manage.py upgradecomponent` command can be used to upgrade a directory (use --path argument to point to each dir) of templates that use components to the new syntax automatically.
 
-This change is done to simplify the API in anticipation of a 1.0 release of django_components. After 1.0 we intend to be stricter with big changes like this in point releases.
+## Getting started
 
 **Version 0.34** adds components as views, which allows you to handle requests and render responses from within a component. See the [documentation](#use-components-as-views) for more details.
 
-**Version 0.28** introduces 'implicit' slot filling and the `default` option for `slot` tags.
+Learn how to set it up in the [documentation installation guide](/user_guide/installation).
 
-**Version 0.27** adds a second installable app: *django_components.safer_staticfiles*. It provides the same behavior as *django.contrib.staticfiles* but with extra security guarantees (more info below in Security Notes).
+### Installation
 
-**Version 0.26** changes the syntax for `{% slot %}` tags. From now on, we separate defining a slot (`{% slot %}`) from filling a slot with content (`{% fill %}`). This means you will likely need to change a lot of slot tags to fill. We understand this is annoying, but it's the only way we can get support for nested slots that fill in other slots, which is a very nice featuPpre to have access to. Hoping that this will feel worth it!
+You can install django-components via pip:
 
-**Version 0.22** starts autoimporting all files inside components subdirectores, to simplify setup. An existing project might start to get AlreadyRegistered-errors because of this. To solve this, either remove your custom loading of components, or set "autodiscover": False in settings.COMPONENTS.
-
-**Version 0.17** renames `Component.context` and `Component.template` to `get_context_data` and `get_template_name`. The old methods still work, but emit a deprecation warning. This change was done to sync naming with Django's class based views, and make using django-components more familiar to Django users. `Component.context` and `Component.template` will be removed when version 1.0 is released.
-
-## Security notes 🚨
-
-*You are advised to read this section before using django-components in production.*
-
-### Static files
-
-Components can be organized however you prefer.
-That said, our prefered way is to keep the files of a component close together by bundling them in the same directory.
-This means that files containing backend logic, such as Python modules and HTML templates, live in the same directory as static files, e.g. JS and CSS.
-
-If your are using _django.contrib.staticfiles_ to collect static files, no distinction is made between the different kinds of files.
-As a result, your Python code and templates may inadvertently become available on your static file server.
-You probably don't want this, as parts of your backend logic will be exposed, posing a __potential security vulnerability__.
-
-As of *v0.27*, django-components ships with an additional installable app *django_components.__safer_staticfiles__*.
-It is a drop-in replacement for *django.contrib.staticfiles*.
-Its behavior is 100% identical except it ignores .py and .html files, meaning these will not end up on your static files server.
-To use it, add it to INSTALLED_APPS and remove _django.contrib.staticfiles_.
-
-```python
-INSTALLED_APPS = [
-    # 'django.contrib.staticfiles',   # <-- REMOVE
-    'django_components',
-    'django_components.safer_staticfiles'  # <-- ADD
-]
+```bash
+pip install django-components
 ```
 
-If you are on an older version of django-components, your alternatives are a) passing `--ignore <pattern>` options to the _collecstatic_ CLI command, or b) defining a subclass of StaticFilesConfig.
-Both routes are described in the official [docs of the _staticfiles_ app](https://docs.djangoproject.com/en/4.2/ref/contrib/staticfiles/#customizing-the-ignored-pattern-list).
+<!-- FIXME LINK -->
+Learn how to set it up in the [installation guide](/user_guide/installation).
+
+## Compatibility
+
+`django-components` is compatible with modern and LTS versions of Django.
+
+<!-- FIXME Link -->
+Check out the [compatibility guide](/user_guide/compatibility) to see which versions are supported.
+
+
+## Release notes
+
+<!-- FIXME -->
+See the docs
+## Security notes 🚨
 
 Note that `safer_staticfiles` excludes the `.py` and `.html` files for [collectstatic command](https://docs.djangoproject.com/en/5.0/ref/contrib/staticfiles/#collectstatic):
 
