@@ -63,6 +63,7 @@ And this is what gets rendered (plus the CSS and Javascript you've specified):
 ## Release notes
 
 🚨📢 **Version 0.85** Autodiscovery module resolution changed. Following undocumented behavior was removed:
+
 - Previously, autodiscovery also imported any `[app]/components.py` files, and used `SETTINGS_MODULE` to search for component dirs.
     - To migrate from:
         -  `[app]/components.py` - Define each module in `COMPONENTS.libraries` setting,
@@ -82,6 +83,7 @@ And this is what gets rendered (plus the CSS and Javascript you've specified):
 
 
 🚨📢 **Version 0.77** CHANGED the syntax for accessing default slot content.
+
 - Previously, the syntax was
 `{% fill "my_slot" as "alias" %}` and `{{ alias.default }}`.
 - Now, the syntax is
@@ -338,7 +340,7 @@ And voilá!! We've created our first component.
 
 Components can also be defined in a single file, which is useful for small components. To do this, you can use the `template`, `js`, and `css` class attributes instead of the `template_name` and `Media`. For example, here's the calendar component from above, defined in a single file:
 
-```python
+```python title="[project root]/components/calendar.py"
 # In a file called [project root]/components/calendar.py
 from django_components import component
 from django_components import types as t
